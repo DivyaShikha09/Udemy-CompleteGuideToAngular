@@ -1,0 +1,13 @@
+
+    <div><h1 style="color:deeppink">Check if number is perfect square</h1></div>
+<div>
+    <table>
+        <th></th>
+        <tr>
+            <td><input [(ngModel)]="checkNum" colspan="100%" type="number" (onkeydown)="reset();"></td>
+            <td><button type="button" class="btn" (click)="checkSquare();">Check</button></td>
+        </tr>
+    </table>
+</div>
+<app-success *ngIf="showSuccess"></app-success>
+<app-warning *ngIf="showWarning"></app-warning>    
